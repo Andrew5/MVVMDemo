@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - MVVMTableViewDemo (0.1.0):
+    - Masonry
+
+DEPENDENCIES:
+  - MVVMTableViewDemo (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  MVVMTableViewDemo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MVVMTableViewDemo: c8e8bd88cc8512512e0e4906e31ac427d29d1006
+
+PODFILE CHECKSUM: 5941294adf235a1b2ab1dd04e606ae29b2395c33
+
+COCOAPODS: 1.11.2

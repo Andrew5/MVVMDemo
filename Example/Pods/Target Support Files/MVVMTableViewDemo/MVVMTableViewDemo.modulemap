@@ -1,0 +1,6 @@
+framework module MVVMTableViewDemo {
+  umbrella header "MVVMTableViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

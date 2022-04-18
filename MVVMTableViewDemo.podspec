@@ -31,12 +31,12 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'MVVMTableViewDemo/Classes/**/*'
-  
+  s.public_header_files = 'Class/**/*'
   # s.resource_bundles = {
   #   'MVVMTableViewDemo' => ['MVVMTableViewDemo/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+#   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
 end
