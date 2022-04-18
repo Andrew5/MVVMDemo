@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod 'MVVMTableViewDemo'
 ```
 ## Description
-未来回增加外部参数，以及回调函数等扩展方法，目前仅为了学习、演示,暂不做外部接口。
+未来会增加外部参数，以及回调函数等扩展方法，目前仅为了学习、演示,暂不做外部接口。
 未来如若有扩展信息，后期再根据需求增加。
 
 ## Author
