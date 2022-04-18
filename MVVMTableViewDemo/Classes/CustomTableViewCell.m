@@ -43,10 +43,16 @@
 
 - (void)setTitlestrstr:(NSString *)titlestrstr{
     self.titleSubdetailLabel.text = titlestrstr;
+    if (titlestrstr.length <= 0){
+        [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.bottom.equalTo(self.contentView.mas_bottom).offset(-20);
+        }];
+    }
 }
 
 - (void)makeConstraints {
     [self.titleLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    // mas_makeConstraints 只负责新增约束 Autolayout不能同时存在两条针对于同一对象的约束 否则会报错
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(20);
         make.left.mas_equalTo(15);
@@ -59,12 +65,11 @@
         make.top.equalTo(self.titleLabel.mas_top);
         make.left.equalTo(self.titleLabel.mas_right).offset(30).priority(1000);
         make.right.equalTo(self.contentView.mas_right).offset(-15).priority(250);
-//        make.height.mas_lessThanOrEqualTo(@13).priority(250);
+        make.height.mas_greaterThanOrEqualTo(@13).priority(250);
         make.bottom.equalTo(self.contentView.mas_bottom).offset(-20);
     }];
     
     [self.line mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_offset(self.titleSubdetailLabel.mas_top);
         make.left.mas_offset(15);
         make.right.mas_offset(-15);
         make.height.mas_offset(1);
