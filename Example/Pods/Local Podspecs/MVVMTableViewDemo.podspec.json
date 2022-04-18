@@ -19,7 +19,6 @@
     "ios": "9.0"
   },
   "source_files": "MVVMTableViewDemo/Classes/**/*",
-  "public_header_files": "Class/**/*",
   "dependencies": {
     "Masonry": [
 
