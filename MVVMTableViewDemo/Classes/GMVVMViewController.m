@@ -3,7 +3,7 @@
 //  testSingature
 //
 //  Created by jabraknight on 2022/4/5.
-//  Copyright © 2022 zk. All rights reserved.
+//  Copyright © 2022 Jabraknight. All rights reserved.
 //
 //https://mp.weixin.qq.com/s/L7s8cK-0LXGUXaiAzXP3OA
 #import "GMVVMViewController.h"
